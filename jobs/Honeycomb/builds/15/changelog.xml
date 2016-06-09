@@ -1,0 +1,11 @@
+commit c7a6fbd2ed01c7bea8d7430e4323581029ec37f5
+tree a63d96f5382418ba21511e4f18853436c7a77cb6
+parent 7f48112b7bfb3514090fb4d364bb3dafca0b0d05
+author s-ashwinkumar <s.ashwinkumar2490@gmail.com> 2016-06-07 12:27:41 -0400
+committer s-ashwinkumar <s.ashwinkumar2490@gmail.com> 2016-06-07 12:27:41 -0400
+
+    Exclude Vertx code from unit tests
+
+
+
+:100755 100755 bb9d36254a5b4cfd3a5016cda397bc9144df18d4 46c8fb4be6dc65182cdfbfd05fcc969b54d86b56 M	pom.xml

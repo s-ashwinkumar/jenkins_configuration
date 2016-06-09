@@ -1,0 +1,208 @@
+GitHub pull request #2 of commit 43aafadf6a75a301ea6d7aa68b4686e4e9f492ba, no merge conflicts.
+Setting status of 43aafadf6a75a301ea6d7aa68b4686e4e9f492ba to PENDING with url http://ec2-54-85-103-133.compute-1.amazonaws.com:8080/job/Honeycomb/10/ and message: 'Build started sha1 is merged.'
+Building in workspace /var/lib/jenkins/workspace/Honeycomb
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/s-ashwinkumar/HoneyComb.git # timeout=10
+Fetching upstream changes from https://github.com/s-ashwinkumar/HoneyComb.git
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.username s-ashwinkumar # timeout=10
+ > git config --local credential.helper store --file=/tmp/git6645963819272094605.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/s-ashwinkumar/HoneyComb.git +refs/pull/*:refs/remotes/origin/pr/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse origin/development^{commit} # timeout=10
+Checking out Revision a9e20d8df309bc3aaf72b3cc7d6987714dedaaf2 (origin/development)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a9e20d8df309bc3aaf72b3cc7d6987714dedaaf2
+ > git rev-list a9e20d8df309bc3aaf72b3cc7d6987714dedaaf2 # timeout=10
+[Honeycomb] $ /bin/sh -xe /tmp/hudson5680132350572887806.sh
++ mvn clean
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=150m; support was removed in 8.0
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building FaultInjection 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ FaultInjection ---
+[INFO] Deleting /var/lib/jenkins/workspace/Honeycomb/target
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.524 s
+[INFO] Finished at: 2016-06-06T19:04:47+00:00
+[INFO] Final Memory: 5M/15M
+[INFO] ------------------------------------------------------------------------
++ mvn package
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=150m; support was removed in 8.0
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building FaultInjection 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ FaultInjection ---
+[INFO] argLine set to -javaagent:/var/lib/jenkins/.m2/repository/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/var/lib/jenkins/workspace/Honeycomb/target/jacoco.exec,excludes=**/MainServer.*
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ FaultInjection ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/Honeycomb/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ FaultInjection ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 3 source files to /var/lib/jenkins/workspace/Honeycomb/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ FaultInjection ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/Honeycomb/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ FaultInjection ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to /var/lib/jenkins/workspace/Honeycomb/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ FaultInjection ---
+[INFO] Surefire report directory: /var/lib/jenkins/workspace/Honeycomb/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running fi.core.HelloworldTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.214 sec
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:report (report) @ FaultInjection ---
+[INFO] Analyzed bundle 'FaultInjection' with 1 classes
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ FaultInjection ---
+[INFO] Building jar: /var/lib/jenkins/workspace/Honeycomb/target/FaultInjection-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:2.3:shade (default) @ FaultInjection ---
+[WARNING] Map in class org.apache.maven.plugins.shade.resource.ManifestResourceTransformer declares value type as: class java.util.jar.Attributes but saw: class java.lang.String at runtime
+[INFO] Including io.vertx:vertx-core:jar:3.2.1 in the shaded jar.
+[INFO] Including io.netty:netty-common:jar:4.0.33.Final in the shaded jar.
+[INFO] Including io.netty:netty-buffer:jar:4.0.33.Final in the shaded jar.
+[INFO] Including io.netty:netty-transport:jar:4.0.33.Final in the shaded jar.
+[INFO] Including io.netty:netty-handler:jar:4.0.33.Final in the shaded jar.
+[INFO] Including io.netty:netty-codec:jar:4.0.33.Final in the shaded jar.
+[INFO] Including io.netty:netty-codec-http:jar:4.0.33.Final in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-core:jar:2.6.1 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-databind:jar:2.6.1 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-annotations:jar:2.6.0 in the shaded jar.
+[INFO] Including io.vertx:vertx-web:jar:3.1.0 in the shaded jar.
+[INFO] Including io.vertx:vertx-auth-common:jar:3.1.0 in the shaded jar.
+[INFO] Including io.vertx:vertx-jdbc-client:jar:3.1.0 in the shaded jar.
+[INFO] Including io.vertx:vertx-sql-common:jar:3.1.0 in the shaded jar.
+[INFO] Including com.mchange:c3p0:jar:0.9.5.1 in the shaded jar.
+[INFO] Including com.mchange:mchange-commons-java:jar:0.2.10 in the shaded jar.
+[INFO] Including com.zaxxer:HikariCP:jar:2.3.9 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-api:jar:1.7.10 in the shaded jar.
+[INFO] Including org.javassist:javassist:jar:3.18.2-GA in the shaded jar.
+[INFO] Including com.jolbox:bonecp:jar:0.8.0.RELEASE in the shaded jar.
+[INFO] Including com.google.guava:guava:jar:15.0 in the shaded jar.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.672 s
+[INFO] Finished at: 2016-06-06T19:04:57+00:00
+[INFO] Final Memory: 27M/67M
+[INFO] ------------------------------------------------------------------------
++ mvn verify
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=150m; support was removed in 8.0
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building FaultInjection 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ FaultInjection ---
+[INFO] argLine set to -javaagent:/var/lib/jenkins/.m2/repository/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/var/lib/jenkins/workspace/Honeycomb/target/jacoco.exec,excludes=**/MainServer.*
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ FaultInjection ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/Honeycomb/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ FaultInjection ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 3 source files to /var/lib/jenkins/workspace/Honeycomb/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ FaultInjection ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/Honeycomb/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ FaultInjection ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ FaultInjection ---
+[INFO] Surefire report directory: /var/lib/jenkins/workspace/Honeycomb/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running fi.core.HelloworldTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.198 sec
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:report (report) @ FaultInjection ---
+[INFO] Analyzed bundle 'FaultInjection' with 1 classes
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ FaultInjection ---
+[INFO] Building jar: /var/lib/jenkins/workspace/Honeycomb/target/FaultInjection-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:2.3:shade (default) @ FaultInjection ---
+[WARNING] Map in class org.apache.maven.plugins.shade.resource.ManifestResourceTransformer declares value type as: class java.util.jar.Attributes but saw: class java.lang.String at runtime
+[INFO] Including io.vertx:vertx-core:jar:3.2.1 in the shaded jar.
+[INFO] Including io.netty:netty-common:jar:4.0.33.Final in the shaded jar.
+[INFO] Including io.netty:netty-buffer:jar:4.0.33.Final in the shaded jar.
+[INFO] Including io.netty:netty-transport:jar:4.0.33.Final in the shaded jar.
+[INFO] Including io.netty:netty-handler:jar:4.0.33.Final in the shaded jar.
+[INFO] Including io.netty:netty-codec:jar:4.0.33.Final in the shaded jar.
+[INFO] Including io.netty:netty-codec-http:jar:4.0.33.Final in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-core:jar:2.6.1 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-databind:jar:2.6.1 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-annotations:jar:2.6.0 in the shaded jar.
+[INFO] Including io.vertx:vertx-web:jar:3.1.0 in the shaded jar.
+[INFO] Including io.vertx:vertx-auth-common:jar:3.1.0 in the shaded jar.
+[INFO] Including io.vertx:vertx-jdbc-client:jar:3.1.0 in the shaded jar.
+[INFO] Including io.vertx:vertx-sql-common:jar:3.1.0 in the shaded jar.
+[INFO] Including com.mchange:c3p0:jar:0.9.5.1 in the shaded jar.
+[INFO] Including com.mchange:mchange-commons-java:jar:0.2.10 in the shaded jar.
+[INFO] Including com.zaxxer:HikariCP:jar:2.3.9 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-api:jar:1.7.10 in the shaded jar.
+[INFO] Including org.javassist:javassist:jar:3.18.2-GA in the shaded jar.
+[INFO] Including com.jolbox:bonecp:jar:0.8.0.RELEASE in the shaded jar.
+[INFO] Including com.google.guava:guava:jar:15.0 in the shaded jar.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.548 s
+[INFO] Finished at: 2016-06-06T19:05:06+00:00
+[INFO] Final Memory: 27M/67M
+[INFO] ------------------------------------------------------------------------
+[JaCoCo plugin] Collecting JaCoCo coverage data...
+[JaCoCo plugin] **/**.exec;**/classes;**/src/main/java; locations are configured
+[JaCoCo plugin] Number of found exec files for pattern **/**.exec: 1
+[JaCoCo plugin] Saving matched execfiles:  /var/lib/jenkins/workspace/Honeycomb/target/jacoco.exec
+[JaCoCo plugin] Saving matched class directories for class-pattern: **/classes:  /var/lib/jenkins/workspace/Honeycomb/target/classes
+[JaCoCo plugin] Saving matched source directories for source-pattern: **/src/main/java:  /var/lib/jenkins/workspace/Honeycomb/src/main/java
+[JaCoCo plugin] Loading inclusions files..
+[JaCoCo plugin] inclusions: []
+[JaCoCo plugin] exclusions: [**/MainServer.class]
+[JaCoCo plugin] Thresholds: JacocoHealthReportThresholds [minClass=0, maxClass=0, minMethod=0, maxMethod=0, minLine=95, maxLine=95, minBranch=0, maxBranch=0, minInstruction=0, maxInstruction=0, minComplexity=0, maxComplexity=0]
+[JaCoCo plugin] Publishing the results..
+[JaCoCo plugin] Loading packages..
+[JaCoCo plugin] Done.
+[JaCoCo plugin] Overall coverage: class: 100, method: 100, line: 100, branch: 0, instruction: 100
+Setting status of 43aafadf6a75a301ea6d7aa68b4686e4e9f492ba to SUCCESS with url http://ec2-54-85-103-133.compute-1.amazonaws.com:8080/job/Honeycomb/10/ and message: 'Build finished. '
+Finished: SUCCESS

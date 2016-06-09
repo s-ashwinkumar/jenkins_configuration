@@ -1,0 +1,14 @@
+Started on Jun 9, 2016 10:30:04 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision c60e093f51fadd1e5da70009f1b8869e0b6d1257 (origin/master)
+using .gitcredentials to set credentials
+ > git --version # timeout=10
+ > git init /tmp/hudson5187932721660905447tmp # timeout=10
+ > git config --local credential.username s-ashwinkumar # timeout=10
+ > git config --local credential.helper store --file=/tmp/git30220716498816192.credentials # timeout=10
+ > git -c core.askpass=true ls-remote -h https://github.com/s-ashwinkumar/HoneyComb.git # timeout=10
+ > git config --local --remove-section credential # timeout=10
+Found 7 remote heads on https://github.com/s-ashwinkumar/HoneyComb.git
+[poll] Latest remote head revision on refs/heads/master is: dd4b0731a2b8c826046f0fcb56d668a7f04f19c7
+Done. Took 0.49 sec
+Changes found

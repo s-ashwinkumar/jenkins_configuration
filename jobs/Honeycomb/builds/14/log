@@ -1,0 +1,229 @@
+Started by user [8mha:AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyJEgZu/dLi1CL9xJTczDwAzEzwlcAAAAA=[0mAshwin Kumar Subramanian
+Building in workspace /var/lib/jenkins/workspace/Honeycomb
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+Cloning the remote Git repository
+Cloning repository https://github.com/s-ashwinkumar/HoneyComb.git
+ > git init /var/lib/jenkins/workspace/Honeycomb # timeout=10
+Fetching upstream changes from https://github.com/s-ashwinkumar/HoneyComb.git
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.username s-ashwinkumar # timeout=10
+ > git config --local credential.helper store --file=/tmp/git3299459892459779724.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/s-ashwinkumar/HoneyComb.git +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git config remote.origin.url https://github.com/s-ashwinkumar/HoneyComb.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/s-ashwinkumar/HoneyComb.git # timeout=10
+Fetching upstream changes from https://github.com/s-ashwinkumar/HoneyComb.git
+using .gitcredentials to set credentials
+ > git config --local credential.username s-ashwinkumar # timeout=10
+ > git config --local credential.helper store --file=/tmp/git4947423687107273975.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/s-ashwinkumar/HoneyComb.git +refs/pull/*:refs/remotes/origin/pr/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse origin/development^{commit} # timeout=10
+Checking out Revision 7f48112b7bfb3514090fb4d364bb3dafca0b0d05 (origin/development)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7f48112b7bfb3514090fb4d364bb3dafca0b0d05
+ > git rev-list aa27882d48f1d7c2b097995dba3ab3beadc837e8 # timeout=10
+[Honeycomb] $ /bin/sh -xe /tmp/hudson1966860032895875324.sh
++ mvn clean
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=150m; support was removed in 8.0
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building FaultInjection 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ FaultInjection ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.666 s
+[INFO] Finished at: 2016-06-06T20:21:39+00:00
+[INFO] Final Memory: 5M/15M
+[INFO] ------------------------------------------------------------------------
++ mvn package
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=150m; support was removed in 8.0
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building FaultInjection 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: https://repo.maven.apache.org/maven2/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.pom
+930/930 B               Downloaded: https://repo.maven.apache.org/maven2/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.pom (930 B at 1.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar
+3/1206 KB   5/1206 KB   8/1206 KB   11/1206 KB   13/1206 KB   16/1206 KB   19/1206 KB   21/1206 KB   24/1206 KB   27/1206 KB   29/1206 KB   32/1206 KB   36/1206 KB   40/1206 KB   44/1206 KB   48/1206 KB   52/1206 KB   56/1206 KB   60/1206 KB   64/1206 KB   68/1206 KB   72/1206 KB   76/1206 KB   80/1206 KB   84/1206 KB   88/1206 KB   92/1206 KB   96/1206 KB   100/1206 KB   104/1206 KB   108/1206 KB   112/1206 KB   116/1206 KB   120/1206 KB   124/1206 KB   128/1206 KB   132/1206 KB   136/1206 KB   140/1206 KB   144/1206 KB   148/1206 KB   152/1206 KB   156/1206 KB   160/1206 KB   164/1206 KB   168/1206 KB   172/1206 KB   176/1206 KB   180/1206 KB   184/1206 KB   188/1206 KB   192/1206 KB   196/1206 KB   200/1206 KB   204/1206 KB   208/1206 KB   212/1206 KB   216/1206 KB   220/1206 KB   224/1206 KB   228/1206 KB   232/1206 KB   236/1206 KB   240/1206 KB   244/1206 KB   248/1206 KB   252/1206 KB   256/1206 KB   260/1206 KB   264/1206 KB   268/1206 KB   272/1206 KB   276/1206 KB   280/1206 KB   284/1206 KB   288/1206 KB   292/1206 KB   296/1206 KB   300/1206 KB   304/1206 KB   308/1206 KB   312/1206 KB   316/1206 KB   320/1206 KB   324/1206 KB   328/1206 KB   332/1206 KB   336/1206 KB   340/1206 KB   344/1206 KB   348/1206 KB   352/1206 KB   356/1206 KB   360/1206 KB   364/1206 KB   368/1206 KB   372/1206 KB   376/1206 KB   380/1206 KB   384/1206 KB   388/1206 KB   392/1206 KB   396/1206 KB   400/1206 KB   404/1206 KB   408/1206 KB   412/1206 KB   416/1206 KB   420/1206 KB   424/1206 KB   428/1206 KB   432/1206 KB   436/1206 KB   440/1206 KB   444/1206 KB   448/1206 KB   452/1206 KB   456/1206 KB   460/1206 KB   464/1206 KB   468/1206 KB   472/1206 KB   476/1206 KB   480/1206 KB   484/1206 KB   488/1206 KB   492/1206 KB   496/1206 KB   500/1206 KB   504/1206 KB   508/1206 KB   512/1206 KB   516/1206 KB   520/1206 KB   524/1206 KB   528/1206 KB   532/1206 KB   536/1206 KB   540/1206 KB   544/1206 KB   548/1206 KB   552/1206 KB   556/1206 KB   560/1206 KB   564/1206 KB   568/1206 KB   572/1206 KB   576/1206 KB   580/1206 KB   584/1206 KB   588/1206 KB   592/1206 KB   596/1206 KB   600/1206 KB   604/1206 KB   607/1206 KB   611/1206 KB   615/1206 KB   619/1206 KB   623/1206 KB   627/1206 KB   631/1206 KB   635/1206 KB   639/1206 KB   643/1206 KB   647/1206 KB   651/1206 KB   655/1206 KB   659/1206 KB   663/1206 KB   667/1206 KB   671/1206 KB   675/1206 KB   679/1206 KB   683/1206 KB   687/1206 KB   691/1206 KB   695/1206 KB   699/1206 KB   703/1206 KB   707/1206 KB   711/1206 KB   715/1206 KB   719/1206 KB   723/1206 KB   727/1206 KB   731/1206 KB   735/1206 KB   739/1206 KB   743/1206 KB   747/1206 KB   751/1206 KB   755/1206 KB   759/1206 KB   763/1206 KB   767/1206 KB   771/1206 KB   775/1206 KB   779/1206 KB   783/1206 KB   787/1206 KB   791/1206 KB   795/1206 KB   799/1206 KB   803/1206 KB   807/1206 KB   811/1206 KB   815/1206 KB   819/1206 KB   823/1206 KB   827/1206 KB   831/1206 KB   835/1206 KB   839/1206 KB   843/1206 KB   847/1206 KB   851/1206 KB   855/1206 KB   859/1206 KB   863/1206 KB   867/1206 KB   871/1206 KB   875/1206 KB   879/1206 KB   883/1206 KB   887/1206 KB   891/1206 KB   895/1206 KB   899/1206 KB   903/1206 KB   907/1206 KB   911/1206 KB   915/1206 KB   919/1206 KB   923/1206 KB   927/1206 KB   931/1206 KB   935/1206 KB   939/1206 KB   943/1206 KB   947/1206 KB   951/1206 KB   955/1206 KB   959/1206 KB   963/1206 KB   967/1206 KB   971/1206 KB   975/1206 KB   979/1206 KB   983/1206 KB   987/1206 KB   991/1206 KB   995/1206 KB   999/1206 KB   1003/1206 KB   1007/1206 KB   1011/1206 KB   1015/1206 KB   1019/1206 KB   1023/1206 KB   1027/1206 KB   1031/1206 KB   1035/1206 KB   1039/1206 KB   1043/1206 KB   1047/1206 KB   1051/1206 KB   1055/1206 KB   1059/1206 KB   1063/1206 KB   1067/1206 KB   1071/1206 KB   1075/1206 KB   1079/1206 KB   1083/1206 KB   1087/1206 KB   1091/1206 KB   1095/1206 KB   1099/1206 KB   1103/1206 KB   1107/1206 KB   1111/1206 KB   1115/1206 KB   1119/1206 KB   1123/1206 KB   1127/1206 KB   1131/1206 KB   1135/1206 KB   1139/1206 KB   1143/1206 KB   1147/1206 KB   1151/1206 KB   1155/1206 KB   1159/1206 KB   1163/1206 KB   1167/1206 KB   1171/1206 KB   1175/1206 KB   1179/1206 KB   1183/1206 KB   1187/1206 KB   1191/1206 KB   1195/1206 KB   1199/1206 KB   1203/1206 KB   1206/1206 KB                  Downloaded: https://repo.maven.apache.org/maven2/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar (1206 KB at 2733.9 KB/sec)
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ FaultInjection ---
+[INFO] argLine set to -javaagent:/var/lib/jenkins/.m2/repository/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/var/lib/jenkins/workspace/Honeycomb/target/jacoco.exec,excludes=**/MainServer.*
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ FaultInjection ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ FaultInjection ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 7 source files to /var/lib/jenkins/workspace/Honeycomb/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ FaultInjection ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/Honeycomb/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ FaultInjection ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 2 source files to /var/lib/jenkins/workspace/Honeycomb/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ FaultInjection ---
+[INFO] Surefire report directory: /var/lib/jenkins/workspace/Honeycomb/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running fi.core.UserTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.778 sec
+Running loggi.faultinjection.LoggiTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.206 sec
+
+Results :
+
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:report (report) @ FaultInjection ---
+[INFO] Analyzed bundle 'FaultInjection' with 3 classes
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ FaultInjection ---
+[INFO] Building jar: /var/lib/jenkins/workspace/Honeycomb/target/FaultInjection-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:2.3:shade (default) @ FaultInjection ---
+[WARNING] Map in class org.apache.maven.plugins.shade.resource.ManifestResourceTransformer declares value type as: class java.util.jar.Attributes but saw: class java.lang.String at runtime
+[INFO] Including log4j:log4j:jar:1.2.17 in the shaded jar.
+[INFO] Including io.vertx:vertx-core:jar:3.2.1 in the shaded jar.
+[INFO] Including io.netty:netty-common:jar:4.0.33.Final in the shaded jar.
+[INFO] Including io.netty:netty-buffer:jar:4.0.33.Final in the shaded jar.
+[INFO] Including io.netty:netty-transport:jar:4.0.33.Final in the shaded jar.
+[INFO] Including io.netty:netty-handler:jar:4.0.33.Final in the shaded jar.
+[INFO] Including io.netty:netty-codec:jar:4.0.33.Final in the shaded jar.
+[INFO] Including io.netty:netty-codec-http:jar:4.0.33.Final in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-core:jar:2.6.1 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-databind:jar:2.6.1 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-annotations:jar:2.6.0 in the shaded jar.
+[INFO] Including io.vertx:vertx-web:jar:3.1.0 in the shaded jar.
+[INFO] Including io.vertx:vertx-auth-common:jar:3.1.0 in the shaded jar.
+[INFO] Including io.vertx:vertx-jdbc-client:jar:3.1.0 in the shaded jar.
+[INFO] Including io.vertx:vertx-sql-common:jar:3.1.0 in the shaded jar.
+[INFO] Including com.mchange:c3p0:jar:0.9.5.1 in the shaded jar.
+[INFO] Including com.mchange:mchange-commons-java:jar:0.2.10 in the shaded jar.
+[INFO] Including com.zaxxer:HikariCP:jar:2.3.9 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-api:jar:1.7.10 in the shaded jar.
+[INFO] Including org.javassist:javassist:jar:3.18.2-GA in the shaded jar.
+[INFO] Including com.jolbox:bonecp:jar:0.8.0.RELEASE in the shaded jar.
+[INFO] Including com.google.guava:guava:jar:15.0 in the shaded jar.
+[INFO] Including org.mockito:mockito-all:jar:1.10.19 in the shaded jar.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.721 s
+[INFO] Finished at: 2016-06-06T20:21:53+00:00
+[INFO] Final Memory: 26M/74M
+[INFO] ------------------------------------------------------------------------
++ mvn verify
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=150m; support was removed in 8.0
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building FaultInjection 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ FaultInjection ---
+[INFO] argLine set to -javaagent:/var/lib/jenkins/.m2/repository/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/var/lib/jenkins/workspace/Honeycomb/target/jacoco.exec,excludes=**/MainServer.*
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ FaultInjection ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ FaultInjection ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 7 source files to /var/lib/jenkins/workspace/Honeycomb/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ FaultInjection ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/Honeycomb/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ FaultInjection ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ FaultInjection ---
+[INFO] Surefire report directory: /var/lib/jenkins/workspace/Honeycomb/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running fi.core.UserTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.711 sec
+Running loggi.faultinjection.LoggiTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.194 sec
+
+Results :
+
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:report (report) @ FaultInjection ---
+[INFO] Analyzed bundle 'FaultInjection' with 3 classes
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ FaultInjection ---
+[INFO] Building jar: /var/lib/jenkins/workspace/Honeycomb/target/FaultInjection-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:2.3:shade (default) @ FaultInjection ---
+[WARNING] Map in class org.apache.maven.plugins.shade.resource.ManifestResourceTransformer declares value type as: class java.util.jar.Attributes but saw: class java.lang.String at runtime
+[INFO] Including log4j:log4j:jar:1.2.17 in the shaded jar.
+[INFO] Including io.vertx:vertx-core:jar:3.2.1 in the shaded jar.
+[INFO] Including io.netty:netty-common:jar:4.0.33.Final in the shaded jar.
+[INFO] Including io.netty:netty-buffer:jar:4.0.33.Final in the shaded jar.
+[INFO] Including io.netty:netty-transport:jar:4.0.33.Final in the shaded jar.
+[INFO] Including io.netty:netty-handler:jar:4.0.33.Final in the shaded jar.
+[INFO] Including io.netty:netty-codec:jar:4.0.33.Final in the shaded jar.
+[INFO] Including io.netty:netty-codec-http:jar:4.0.33.Final in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-core:jar:2.6.1 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-databind:jar:2.6.1 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-annotations:jar:2.6.0 in the shaded jar.
+[INFO] Including io.vertx:vertx-web:jar:3.1.0 in the shaded jar.
+[INFO] Including io.vertx:vertx-auth-common:jar:3.1.0 in the shaded jar.
+[INFO] Including io.vertx:vertx-jdbc-client:jar:3.1.0 in the shaded jar.
+[INFO] Including io.vertx:vertx-sql-common:jar:3.1.0 in the shaded jar.
+[INFO] Including com.mchange:c3p0:jar:0.9.5.1 in the shaded jar.
+[INFO] Including com.mchange:mchange-commons-java:jar:0.2.10 in the shaded jar.
+[INFO] Including com.zaxxer:HikariCP:jar:2.3.9 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-api:jar:1.7.10 in the shaded jar.
+[INFO] Including org.javassist:javassist:jar:3.18.2-GA in the shaded jar.
+[INFO] Including com.jolbox:bonecp:jar:0.8.0.RELEASE in the shaded jar.
+[INFO] Including com.google.guava:guava:jar:15.0 in the shaded jar.
+[INFO] Including org.mockito:mockito-all:jar:1.10.19 in the shaded jar.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 9.058 s
+[INFO] Finished at: 2016-06-06T20:22:04+00:00
+[INFO] Final Memory: 24M/74M
+[INFO] ------------------------------------------------------------------------
+[JaCoCo plugin] Collecting JaCoCo coverage data...
+[JaCoCo plugin] **/**.exec;**/classes;**/src/main/java; locations are configured
+[JaCoCo plugin] Number of found exec files for pattern **/**.exec: 1
+[JaCoCo plugin] Saving matched execfiles:  /var/lib/jenkins/workspace/Honeycomb/target/jacoco.exec
+[JaCoCo plugin] Saving matched class directories for class-pattern: **/classes:  /var/lib/jenkins/workspace/Honeycomb/target/classes
+[JaCoCo plugin] Saving matched source directories for source-pattern: **/src/main/java:  /var/lib/jenkins/workspace/Honeycomb/src/main/java
+[JaCoCo plugin] Loading inclusions files..
+[JaCoCo plugin] inclusions: []
+[JaCoCo plugin] exclusions: [**/MainServer.class]
+[JaCoCo plugin] Thresholds: JacocoHealthReportThresholds [minClass=0, maxClass=0, minMethod=0, maxMethod=0, minLine=95, maxLine=95, minBranch=0, maxBranch=0, minInstruction=0, maxInstruction=0, minComplexity=0, maxComplexity=0]
+[JaCoCo plugin] Publishing the results..
+[JaCoCo plugin] Loading packages..
+[JaCoCo plugin] Done.
+[JaCoCo plugin] Overall coverage: class: 67, method: 86, line: 67, branch: 80, instruction: 80
+Build step 'Record JaCoCo coverage report' changed build result to FAILURE
+Finished: FAILURE
