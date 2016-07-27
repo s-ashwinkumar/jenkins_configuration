@@ -15,10 +15,11 @@
   <githubAuth>
     <org.jenkinsci.plugins.ghprb.GhprbGitHubAuth>
       <serverAPIUrl>https://api.github.com</serverAPIUrl>
+      <jenkinsUrl>admin</jenkinsUrl>
       <credentialsId>Github-ashwin</credentialsId>
       <id>5c9d2baa-2ac1-4a73-8efe-761e74ab930d</id>
       <description>Anonymous connection</description>
-      <secret>tJudMTrF/xfNSb59zuTGlw==</secret>
+      <secret>uoIsItune+2Tuz6T5EW6Ckgsw/c8IONPvynEdvw2hdU=</secret>
     </org.jenkinsci.plugins.ghprb.GhprbGitHubAuth>
   </githubAuth>
   <adminlist>s-ashwinkumar
