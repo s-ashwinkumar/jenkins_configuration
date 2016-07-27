@@ -46,11 +46,7 @@
           <default>
             <comparator class="hudson.util.CaseInsensitiveComparator"/>
           </default>
-          <int>3</int>
-          <string>AWS_ACCESS_KEY_ID</string>
-          <string>AKIAJSBBQECG5FID2TPQ</string>
-          <string>AWS_SECRET_ACCESS_KEY</string>
-          <string>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</string>
+          <int>1</int>
           <string>MAVEN_OPTS</string>
           <string>-Xmx200m -XX:MaxPermSize=150m</string>
         </tree-map>
